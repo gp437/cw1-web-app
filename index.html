@@ -222,17 +222,26 @@
         location: '',
         time: '',
         activity: [],
-        activityID: [],
+        activityID: 0,
 
       },
 
       methods: {
 
         save_activity() {
-          localStorage.setItem(topic_key, JSON.stringify(this.topic));
-          localStorage.setItem(price_key, JSON.stringify(this.price));
-          localStorage.setItem(location_key, JSON.stringify(this.location));
-          localStorage.setItem(time_key, JSON.stringify(this.time));
+          // activityID = +1;
+          // this.activity.push({
+          //   topic_key, JSON.stringify(this.topic));
+          // localStorage.setItem(price_key, JSON.stringify(this.price));
+          // localStorage.setItem(location_key, JSON.stringify(this.location));
+          // localStorage.setItem(time_key, JSON.stringify(this.time));
+          // })
+          // working down
+          // localStorage.setItem(topic_key, JSON.stringify(this.topic));
+          // localStorage.setItem(price_key, JSON.stringify(this.price));
+          // localStorage.setItem(location_key, JSON.stringify(this.location));
+          // localStorage.setItem(time_key, JSON.stringify(this.time));
+
         },
 
 

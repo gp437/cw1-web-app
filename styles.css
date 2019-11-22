@@ -3,15 +3,12 @@ body {
     background-repeat: repeat-y;
     background-color: #cccccc;
     background-size:75%;
-    font-size: 15pt;
-    border-radius: 25px;
   }
 
   .center {
     margin: auto;
-    width: 70%;
+    width: 60%;
     padding: 10px;
-    border-radius: 25px;
   }
 
   .text1 {
@@ -21,34 +18,14 @@ body {
     float: right;
     margin-top: 1px;
     margin-right: 1px;
-    border-radius: 25px;
   }
   .grid-container {
   display: grid;
-  grid-template-columns:  auto auto;
+  grid-template-columns: auto auto;
   }
   .app2{
-    background-color: seashell ;
+    background-color: snow ;
     font-family: 'Volkhov', serif;
     font-size: 14pt;
-    border-radius: 25px;
-    border-radius: 25px;
-  }
-  .space{
-    padding: 5%;
-   background-color: antiquewhite;
-   border-width: 1cm;
-   border: 1px solid black;
-   border-radius: 25px;
-  }
-  .space1{
-    padding: 2%;
-   background-color: cornsilk;
-   border-width: 1cm;
-   font-size: 14pt;
-   border: 1px solid black;
-   border-radius: 25px;
-  }
-  .input{
-    style : "font-size:20px";
+    width: 150pt;
   }

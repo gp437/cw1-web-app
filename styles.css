@@ -49,3 +49,6 @@ body {
    border: 1px solid black;
    border-radius: 25px;
   }
+  .input{
+    style : "font-size:20px";
+  }

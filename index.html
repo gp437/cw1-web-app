@@ -41,7 +41,7 @@
               <br>
               <ul>
                 <li v-for="activitylist in activitylists" class="space">{{ activitylist }}
-                    <select v-model="topic">
+                    <select v-model="topic" style = "font-size:20px">
                         <option disabled value="">Review</option>
                         <option>1 star</option>
                         <option>2 stars</option>
@@ -50,14 +50,7 @@
                         <option>5 stars</option>
                       </select>
                 </li>
-                <select v-model="topic">
-                    <option disabled value="">Review</option>
-                    <option>1 star</option>
-                    <option>2 stars</option>
-                    <option>3 stars</option>
-                    <option>4 stars</option>
-                    <option>5 stars</option>
-                  </select>
+
               </ul>
             </p>
           </div>
@@ -128,7 +121,7 @@
       <img src="images/login.jpg" alt="" srcset="" style="width:100px;height:40px;" v-on:click="isHidden = !isHidden">
     </div> <br> <!-- div for login BUTTON-->
     <div v-if="logout_show">
-        <button @click="logout">LOG OUT</button>
+        <button @click="logout" v-show="logout">LOG OUT</button>
     </div>
     <div class="text1" v-if="!isHidden"> <br>
       <span>{{userType_id}}</span>
@@ -219,6 +212,8 @@
       },
       methods: {
         checkForm: function (e) {
+          app2.logout_show = true;
+          logout_show = true;
           this.errors = [];
           if (!this.email) {
             this.errors.push('Email required.');
@@ -265,9 +260,7 @@
               e.preventDefault();
             }
           }
-          if (this.password != JSON.parse(localStorage.getItem(password_key))) {
-            this.userType_id = "Wrong password."
-          }
+
           if (this.userType_id == "Service Provider") {
             // eventaddhide = true; show the add events div
             app2.eventaddhide = true;
@@ -287,6 +280,9 @@
             app2.pupilactivity = true;
             app2.logout_show = true;
             console.log("user type id is equal to pupil")
+          }
+          if (this.password != JSON.parse(localStorage.getItem(password_key))) {
+            this.userType_id = "Wrong password."
           }
 
         },

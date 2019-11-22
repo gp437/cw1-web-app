@@ -1,0 +1,31 @@
+body {
+    background-image: url("images/background.jpg"), url();
+    background-repeat: repeat-y;
+    background-color: #cccccc;
+    background-size:75%;
+  }
+
+  .center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+
+  .text1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13pt;
+    text-decoration-style: wavy;
+    float: right;
+    margin-top: 1px;
+    margin-right: 1px;
+  }
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  }
+  .app2{
+    background-color: snow ;
+    font-family: 'Volkhov', serif;
+    font-size: 14pt;
+    width: 150pt;
+  }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+        <div id="app">
+                <select v-model="selected">
+                        <option disabled value="">Please select one</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                      </select>
+                      <br>
+                      
+                      
+                <p v-if="selected">Message Can Be Seen!</p>
+                <p><button class="btn btn-lg btn-primary" v-on:click="seen = !seen">Toggle</button></p>
+
+              </div>
+              
+
+            <script>
+var app = new Vue({
+        el: '#app',
+        data: {
+            seen: true
+        }
+    })
+            </script>
+</body>
+</html>
